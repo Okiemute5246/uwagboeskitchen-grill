@@ -62,6 +62,11 @@ To use the restaurant's own photos later, replace a file in `/images` with a new
 | `g-akara-pap.jpg` | https://www.pexels.com/photo/37624176/ |
 | `g-vendor.jpg` | https://www.pexels.com/photo/32475477/ |
 
+## Link previews
+`og-image.jpg` (1200×630) is the image WhatsApp, Facebook, Instagram and X show when the link is shared. The tags in `<head>` point to `https://uwagboeskitchen-grill.vercel.app/og-image.jpg`. If the site moves to another domain, update the URLs in those `og:` tags.
+
+Apps cache previews. To see the new one, paste the link into https://developers.facebook.com/tools/debug/ and click **Scrape Again**, which also refreshes WhatsApp. Or bump the `?v=2` number in the tags.
+
 ## Updating prices
 All prices on the full menu were copied from the restaurant's online ordering page in November 2026. To change a price, search `index.html` for the dish name and edit the price next to it, inside `<span class="mitem__price">`. Dishes priced by protein list each option and its price under the description.
 
